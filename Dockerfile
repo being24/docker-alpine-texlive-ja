@@ -26,6 +26,7 @@ RUN apk add --no-cache curl perl fontconfig-dev freetype-dev && \
   collection-fontsrecommended \
   collection-langjapanese \
   latexmk && \
+  tlmgr install siunitx && \
   rm -fr /tmp/install-tl-unx && \
   apk del .fetch-deps
 
