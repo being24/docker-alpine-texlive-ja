@@ -20,12 +20,12 @@ RUN apk add --no-cache curl perl fontconfig-dev freetype-dev && \
   > /tmp/install-tl-unx/texlive.profile && \
   /tmp/install-tl-unx/install-tl \
   --profile=/tmp/install-tl-unx/texlive.profile && \
+  tlmgr update --self --all && \
   tlmgr install \
   collection-latexextra \
   collection-fontsrecommended \
   collection-langjapanese \
   latexmk && \
-  tlmgr install siunitx &&\
   rm -fr /tmp/install-tl-unx && \
   apk del .fetch-deps
 
