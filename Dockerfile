@@ -25,7 +25,7 @@ RUN apk add --no-cache curl perl fontconfig-dev freetype-dev && \
   collection-latexextra \
   collection-fontsrecommended \
   collection-langjapanese \
-  latexmk siunitx jlisting && \
+  latexmk siunitx && \
   wget https://raw.githubusercontent.com/being24/docker-alpine-texlive-ja/master/jlisting.sty && \
   mv jlisting.sty /usr/local/texlive/2020/texmf-dist/tex/latex/listing && \
   chmod +r /usr/local/texlive/2020/texmf-dist/tex/latex/listing/jlisting.sty && \
