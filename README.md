@@ -6,27 +6,28 @@
 
 > Minimal TeX Live image for Japanese based on alpine
 
-Forked from [umireon/docker-texci] \(under the MIT License\).
+Forked from [/Paperist/docker-alpine-texlive-ja] \(under the MIT License\).
 
-[umireon/docker-texci]: https://github.com/umireon/docker-texci
+[Paperist/docker-alpine-texlive-ja]: https://github.com/Paperist/docker-alpine-texlive-ja
+Add siunitx and jlisting package.
 
 ## Table of Contents
 
-- [Install](#install)
-- [Usage](#usage)
-- [Contribute](#contribute)
-- [License](#license)
+* [Install](#install)
+* [Usage](#usage)
+* [Contribute](#contribute)
+* [License](#license)
 
 ## Install
 
-```bash
-docker pull paperist/alpine-texlive-ja
+``` bash
+docker pull being241/docker-alpine-texlive-ja
 ```
 
 ## Usage
 
-```bash
-$ docker run --rm -it -v $PWD:/workdir paperist/alpine-texlive-ja
+``` bash
+$ docker run --rm -it -v $PWD:/workdir being241/alpine-texlive-ja
 $ latexmk -C main.tex && latexmk main.tex && latexmk -c main.tex
 ```
 
@@ -36,7 +37,4 @@ PRs accepted.
 
 ## License
 
-MIT © 3846masa
-
-
-
+MIT © being24
