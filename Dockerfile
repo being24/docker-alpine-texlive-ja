@@ -35,4 +35,7 @@ RUN apk add --no-cache curl perl fontconfig-dev freetype-dev && \
 
 WORKDIR /workdir
 
+COPY .latexmkrc /
+COPY .latexmkrc /root/
+
 CMD ["sh"]
